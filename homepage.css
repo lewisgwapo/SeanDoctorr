@@ -1,0 +1,151 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #cc956e;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a4754c;
+    padding: 20px;
+    color: white;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Verdana', serif;
+    font-size: 24px;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* Aligns the navigation items to the left */
+    flex-wrap: wrap; /* Ensures the nav items wrap to the next line if needed */
+    gap: 10px; /* Reduced gap to fit better */
+    margin: 0;
+    padding: 0;
+    margin-right: 50px; /* Adjust the margin to move navigation buttons to the left */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 10px; /* Reduced padding to fit better */
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: black;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px 50px; /* Adjusted padding to account for fixed header */
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+}
+
+.left h2 {
+    font-family: 'Book Antiqua', serif;
+}
+
+.right {
+    flex: 1;
+    text-align: center;
+}
+
+.right img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 45%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.videos {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.videos video {
+    width: 30%;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.23);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    color: white;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a4754c;
+    padding: 10px 0;
+    color: white;
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.go-top,
+.home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a4754c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.go-top:hover,
+.home:hover {
+    background-color: black;
+}

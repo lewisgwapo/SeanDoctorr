@@ -1,0 +1,157 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #cc956e;
+  color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a4754c;
+  padding: 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin-left: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: black;
+  color: white;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2.5em;
+  color: black;
+}
+
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2em;
+  color: white;
+  background-color: #a4754c;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.film-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+
+.film-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border: 3px solid #a4754c;
+  transition: transform 0.3s ease;
+}
+
+.film-container:hover {
+  transform: scale(1.05);
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.tv-show-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.top-btn,
+.home-btn {
+  background-color: #a4754c;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.top-btn:hover,
+.home-btn:hover {
+  background-color: black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a4754c;
+  padding: 10px 0;
+  color: white;
+  z-index: 1000;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.go-top,
+.home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a4754c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.go-top:hover,
+.home:hover {
+  background-color: black;
+}
+
+h1 {
+  color: black;
+}

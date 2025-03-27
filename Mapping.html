@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Destinations</title>
+    <link rel="stylesheet" href="Mapping.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Places I Wish to Explore</h1>
+        <nav>
+            <ul>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="music.html">Soundtrack</a></li>
+                <li><a href="films.html">Films</a></li>
+                <li><a href="Mapping.html" class="active">Dream Destinations</a></li>
+                <li><a href="bucket-list.html">Bucket List</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="right">
+            <div align="center">
+                <img src="Dream Destinations.png" usemap="#dream-destinations" alt="Dream Destinations"
+                    class="fit-image">
+                <map name="dream-destinations">
+                    <area shape="circle" coords="1645,746,320" href="NewYork-City.html" alt="NewYork City, USA">
+                    <area shape="rect" coords="831,205,1326,770" href="Maldives.html" alt="Maldives">
+                    <area shape="rect" coords="831,814,1326,1386" href="Japan.html" alt="Japan">
+                    <area shape="rect" coords="267,207,759,768" href="Switzerland.html" alt="Switzerland">
+                    <area shape="poly" coords="294,814,782,814,785,1379,298,1386" href="Alaska.html" alt="Nome, Alaska">
+                </map>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="go-top">Go To Top</a>
+            <a href="index.html" class="home">Home</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            imageMapResize();
+        });
+    </script>
+</body>
+
+</html>
